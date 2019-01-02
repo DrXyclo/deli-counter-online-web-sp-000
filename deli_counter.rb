@@ -36,7 +36,8 @@ def take_a_number(katz_deli, person_joining_the_end_of_the_line)
     reverse_katz_deli_array = []
     katz_deli.each.with_index(1) do |person, index|  
        reverse_katz_deli_array << "Welcome, #{person}. You are number #{index} in line."
-       puts reverse_katz_deli_array.last 
+       binding.pry
+       puts reverse_katz_deli_array.last
         end
     
   else
