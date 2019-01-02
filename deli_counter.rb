@@ -52,6 +52,7 @@ end
 
 def now_serving(katz_deli)
   if katz_deli != []
+    puts "Currently serving #{katz_deli[0]}."
     
     
     
@@ -68,16 +69,6 @@ end
         now_serving(other_deli)
         expect(other_deli).to eq(%w(Avi Spencer))
 
-
-  describe "#take_a_number" do
-    context "there is nobody in line" do
-      it "should add a person to the line" do
-        expect($stdout).to receive(:puts).with("Welcome, Ada. You are number 1 in line.")
-        take_a_number(katz_deli, "Ada")
-        expect(katz_deli).to eq(["Ada"])
-      end
-    end
- 
 
  
 #  array = ["kiwi", "durian", "starfruit"]
