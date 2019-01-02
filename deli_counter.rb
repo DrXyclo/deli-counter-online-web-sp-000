@@ -60,6 +60,7 @@ def now_serving(katz_deli)
   end 
   
 end
+=begin 
   describe "#now_serving" do
     context "there are no people in line" do
       it "should say that the line is empty" do
@@ -74,7 +75,7 @@ end
         now_serving(other_deli)
         expect(other_deli).to eq(%w(Avi Spencer))
 
-=begin 
+
   describe "#take_a_number" do
     context "there is nobody in line" do
       it "should add a person to the line" do
