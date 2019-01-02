@@ -4,11 +4,14 @@ require 'pry'
 # blog worthy
 
 ### Code ###
+
+## TEST CODE ## 
+
 # katz_deli = []
-other_deli = ["Logan", "Avi", "Spencer"]
+# other_deli = ["Logan", "Avi", "Spencer"]
 # another_deli = ["Amanda", "Annette", "Ruchi", "Jason", "Logan", "Spencer", "Avi", "Joe", "Rachel", "Lindsey"]
 
-
+############################################################################
 #=begin
 
 def line(katz_deli)
@@ -28,7 +31,7 @@ line_array = []
   end 
 end
   
-# line(other_deli)
+# line(other_deli) ## test code
 
 def take_a_number(katz_deli, person_joining_the_end_of_the_line)
   if  katz_deli != []
@@ -48,7 +51,7 @@ def take_a_number(katz_deli, person_joining_the_end_of_the_line)
   
 end 
   
-# take_a_number(other_deli, "Grace")
+# take_a_number(other_deli, "Grace")  ## test code
 
 def now_serving(katz_deli)
   if katz_deli != []
@@ -57,5 +60,4 @@ def now_serving(katz_deli)
   else 
     puts "There is nobody waiting to be served!"
   end 
-  
 end
