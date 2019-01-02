@@ -31,26 +31,28 @@ end
 # line(other_deli)
 
 def take_a_number(katz_deli, person_joining_the_end_of_the_line)
-  if katz_deli != []
-    katz_deli << person_joining_the_end_of_the_line
-    reverse_katz_deli_array = []
-    katz_deli.each.with_index(1) do |person, index|  
-       reverse_katz_deli_array << "Welcome, #{person}. You are number #{index} in line."
-     
-       
+  if  katz_deli != []
+      katz_deli << person_joining_the_end_of_the_line
+      reverse_katz_deli_array = []
+        katz_deli.each.with_index(1) do |person, index|  
+          reverse_katz_deli_array << "Welcome, #{person}. You are number #{index} in line."
         end
-        puts reverse_katz_deli_array.last
+  puts reverse_katz_deli_array.last
     
   else
-  katz_deli << person_joining_the_end_of_the_line
-  katz_deli.each.with_index(1) do |person, index|
-    puts "Welcome, #{person}. You are number #{index} in line."
-        end
+    katz_deli << person_joining_the_end_of_the_line
+      katz_deli.each.with_index(1) do |person, index|
+        puts "Welcome, #{person}. You are number #{index} in line."
+      end
   end 
   
 end 
   
-take_a_number(other_deli, "Grace")
+# take_a_number(other_deli, "Grace")
+
+def now_serving(katz_deli)
+  
+  
 
 =begin 
   describe "#take_a_number" do
